@@ -1,14 +1,14 @@
 ﻿namespace ApplicationCore.Commons.Repository;
 
-public interface IIdentity<K>: IComparable<K> where K: IComparable<K>
+public interface IIdentity<TK>: IComparable<TK> where TK: IComparable<TK>
 {
-    public K Id
+    public TK Id
     {
         get;
         set;
     }
 
-    int IComparable<K>.CompareTo(K? other)
+    int IComparable<TK>.CompareTo(TK? other)
     {
         return CompareTo(other);
     }

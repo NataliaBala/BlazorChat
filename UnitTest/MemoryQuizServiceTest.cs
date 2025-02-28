@@ -11,12 +11,12 @@ namespace UnitTest;
 
 public class MemoryQuizServiceTest
 {
-    private IGenericRepository<Quiz, int> quizRepository = new MemoryGenericRepository<Quiz, int>(new IntGenerator());
+    private readonly IGenericRepository<Quiz, int> _quizRepository = new MemoryGenericRepository<Quiz, int>(new IntGenerator());
 
-    private IGenericRepository<QuizItem, int> itemRepository =
+    private readonly IGenericRepository<QuizItem, int> _itemRepository =
         new MemoryGenericRepository<QuizItem, int>(new IntGenerator());
 
-    private IGenericRepository<QuizItemUserAnswer, string> answerRepository =
+    private readonly IGenericRepository<QuizItemUserAnswer, string> _answerRepository =
         new MemoryGenericRepository<QuizItemUserAnswer, string>(null);
 
     private IQuizAdminService _aservice;
@@ -26,8 +26,8 @@ public class MemoryQuizServiceTest
 
     public MemoryQuizServiceTest()
     {
-        _aservice = new QuizAdminService(quizRepository, itemRepository);
-        _uservice = new QuizUserService(quizRepository, answerRepository, itemRepository);
+        _aservice = new QuizAdminService(_quizRepository, _itemRepository);
+        _uservice = new QuizUserService(_quizRepository, _answerRepository, _itemRepository);
 
         _quiz = _aservice.AddQuiz(
             new Quiz()

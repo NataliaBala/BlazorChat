@@ -2,6 +2,7 @@
 using ApplicationCore.Interfaces.Criteria;
 using ApplicationCore.Models;
 using ApplicationCore.Models.QuizAggregate;
+using ApplicationCore.Specifications;
 
 namespace ApplicationCore.Interfaces.UserService;
 

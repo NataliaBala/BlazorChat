@@ -1,9 +1,7 @@
-﻿using System.Linq.Expressions;
-using ApplicationCore.Commons.Specification;
-using ApplicationCore.Interfaces.UserService;
+﻿using ApplicationCore.Commons.Specification;
 using ApplicationCore.Models;
 
-namespace ApplicationCore.Interfaces.Criteria;
+namespace ApplicationCore.Specifications;
 
 public class QuizItemsForQuizIdFilledByUser: BaseSpecification<QuizItemUserAnswer>
 {
