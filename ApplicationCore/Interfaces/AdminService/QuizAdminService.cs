@@ -7,61 +7,61 @@ namespace ApplicationCore.Interfaces.AdminService;
 
 public class QuizAdminService : IQuizAdminService
 {
-    private readonly IGenericRepository<Quiz, int> quizRepository;
-    private readonly IGenericRepository<QuizItem, int> itemRepository;
+    private readonly IGenericRepository<Quiz, int> _quizRepository;
+    private readonly IGenericRepository<QuizItem, int> _itemRepository;
 
     public QuizAdminService(IGenericRepository<Quiz, int> quizRepository,
         IGenericRepository<QuizItem, int> itemRepository)
     {
-        this.quizRepository = quizRepository;
-        this.itemRepository = itemRepository;
+        this._quizRepository = quizRepository;
+        this._itemRepository = itemRepository;
     }
 
     public QuizItem AddQuizItemToQuiz(int quizId, QuizItem item)
     {
-        var quiz = quizRepository.FindById(quizId);
+        var quiz = _quizRepository.FindById(quizId);
         if (quiz is null)
         {
             throw new Exception();
         }
-        var newItem = itemRepository.Add(item);
+        var newItem = _itemRepository.Add(item);
         quiz.Items.Add(newItem);
-        quizRepository.Update(quizId, quiz);
+        _quizRepository.Update(quizId, quiz);
         return newItem;
     }
 
     public void UpdateQuizItem(QuizItem item)
     {
-        itemRepository.Update(item.Id, item);
+        _itemRepository.Update(item.Id, item);
     }
 
     public QuizItem? FindQuizItemById(int id)
     {
-        return itemRepository.FindById(id);
+        return _itemRepository.FindById(id);
     }
     
     public Quiz AddQuiz(Quiz quiz)
     {
-        return quizRepository.Add(quiz);
+        return _quizRepository.Add(quiz);
     }
 
     public void UpdateQuiz(Quiz quiz)
     {
-        quizRepository.Update(quiz.Id, quiz);
+        _quizRepository.Update(quiz.Id, quiz);
     }
 
     public IQueryable<QuizItem> FindAllQuizItems()
     {
-        return itemRepository.FindAll().AsQueryable();
+        return _itemRepository.FindAll().AsQueryable();
     }
 
     public IQueryable<Quiz> FindAllQuizzes()
     {
-        return quizRepository.FindAll().AsQueryable();
+        return _quizRepository.FindAll().AsQueryable();
     }
 
     public IEnumerable<Quiz> FindBySpecification(ISpecification<Quiz> specification)
     {
-        return quizRepository.FindBySpecification(specification);
+        return _quizRepository.FindBySpecification(specification);
     }
 }

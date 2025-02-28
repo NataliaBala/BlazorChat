@@ -8,7 +8,7 @@
 
     <ItemGroup>
       <Folder Include="Commons" />
-      <Folder Include="Excpetions\" />
+      <Folder Include="Exceptions\" />
     </ItemGroup>
 
 </Project>

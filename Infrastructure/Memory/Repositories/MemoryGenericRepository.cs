@@ -1,5 +1,6 @@
 ﻿using ApplicationCore.Commons.Repository;
 using ApplicationCore.Interfaces.Criteria;
+using Infrastructure.Memory.Generators;
 
 namespace Infrastructure.Memory.Repositories;
 

@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.Memory;
+﻿namespace Infrastructure.Memory.Generators;
 
 public class IntGenerator: IGenericGenerator<int>
 {
