@@ -3,15 +3,21 @@ using ApplicationCore.Interfaces.AdminService;
 using ApplicationCore.Interfaces.UserService;
 using ApplicationCore.Models;
 using ApplicationCore.Models.QuizAggregate;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Infrastructure.Memory.Generators;
 using Infrastructure.Memory.Repositories;
 using Web;
+using WebApi.Dto;
+using WebApi.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddNewtonsoftJson();
+builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -21,6 +27,8 @@ builder.Services.AddSingleton<IGenericRepository<QuizItem, int>, MemoryGenericRe
 builder.Services.AddSingleton<IGenericRepository<QuizItemUserAnswer, string>, MemoryGenericRepository<QuizItemUserAnswer, string>>();
 builder.Services.AddSingleton<IQuizUserService, QuizUserService>();
 builder.Services.AddSingleton<IQuizAdminService, QuizAdminService>();
+builder.Services.AddScoped<IValidator<QuizItem>, QuizItemValidator>();
+builder.Services.AddScoped<IValidator<NewQuizItemDto>, NewQuizItemDtoValidator>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
