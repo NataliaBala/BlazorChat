@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj": {
+    "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\ApplicationCore\\ApplicationCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj",
+        "projectUniqueName": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\ApplicationCore\\ApplicationCore.csproj",
         "projectName": "ApplicationCore",
-        "projectPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj",
-        "packagesPath": "C:\\Users\\szymo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\obj\\",
+        "projectPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\ApplicationCore\\ApplicationCore.csproj",
+        "packagesPath": "C:\\Users\\balan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\ApplicationCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\szymo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\balan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -36,7 +38,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -66,15 +68,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
+              "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
+              "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
+              "version": "[8.0.11, 8.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -82,34 +84,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\szymo\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\balan\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\szymo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\balan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\szymo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\balan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\ApplicationCore\\ApplicationCore.csproj"
               }
             }
           }
@@ -122,7 +126,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -148,15 +152,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
+              "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
+              "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
+              "version": "[8.0.11, 8.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -164,40 +168,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\szymo\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\balan\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\WebApi\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\szymo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\WebApi\\obj\\",
+        "projectPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\balan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\szymo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\balan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Infrastructure\\Infrastructure.csproj"
               },
-              "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Web\\Web.csproj": {
-                "projectPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Web\\Web.csproj"
+              "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Web\\Web.csproj": {
+                "projectPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Web\\Web.csproj"
               }
             }
           }
@@ -210,7 +216,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -257,37 +263,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\szymo\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\balan\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Web\\Web.csproj": {
+    "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Web\\Web.csproj",
+        "projectUniqueName": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Web\\Web.csproj",
-        "packagesPath": "C:\\Users\\szymo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Web\\obj\\",
+        "projectPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\balan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\szymo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\balan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj": {
-                "projectPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\ApplicationCore\\ApplicationCore.csproj"
+              "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\ApplicationCore\\ApplicationCore.csproj": {
+                "projectPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\ApplicationCore\\ApplicationCore.csproj"
               },
-              "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\szymo\\RiderProjects\\wsei-backend-lab\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\balan\\OneDrive\\Pulpit\\backendlab\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -300,7 +308,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -326,19 +334,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
+              "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.13, 8.0.13]"
+              "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
+              "version": "[8.0.11, 8.0.11]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.13, 8.0.13]"
+              "version": "[8.0.11, 8.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -349,7 +357,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\szymo\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\balan\\.dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
