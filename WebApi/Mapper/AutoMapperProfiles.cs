@@ -9,7 +9,7 @@ public class AutoMapperProfiles: Profile
 {
     public AutoMapperProfiles()
     {
-        CreateMap<QuizItem, QuizItemDto>()
+        CreateMap<QuizItem, QuizItemDto>()//
             .ForMember(
                 q => q.Options,
                 op => op.MapFrom(i => new List<string>(i.IncorrectAnswers) { i.CorrectAnswer }));
